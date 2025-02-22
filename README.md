@@ -2,4 +2,9 @@
 
 Uses tailwind and vite
 
-[Open in browser](https://magentapenguin.github.io/)
+## Run the project
+
+```bash
+npm install
+npm run dev
+```
