@@ -1,2 +1,5 @@
-# vite-pages
-A template for using vite and gh pages
+# magentapenguin.github.io
+
+Uses tailwind and vite
+
+[Open in browser](https://magentapenguin.github.io/)
