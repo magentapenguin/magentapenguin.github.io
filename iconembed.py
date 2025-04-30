@@ -47,8 +47,10 @@ def download_icon(icon_url, filename, ext=None):
                 f.write(response.content)
                 
             print(f"Icon downloaded and saved as: {filename}{ext}")
+            return ext
     except Exception as e:
         print(f"Error downloading icon: {e}")
+        return None
 
 with open('src/links.json', 'r') as f:
     links = json.load(f)
@@ -66,8 +68,10 @@ for link in links['data']:
             icon = urllib.parse.urljoin(icon_url, icon)
             icon_name = os.path.basename(icon)
             filename = os.path.join('favicons', f"{secrets.token_hex(8)}")
-            download_icon(icon,  os.path.join('public',filename))
-            links['data'][links['data'].index(link)]['icon'] = '/'+filename
+            ext = download_icon(icon,  os.path.join('public',filename))
+            if ext is None:
+                continue
+            links['data'][links['data'].index(link)]['icon'] = '/'+filename+ext
             print(f"Downloaded icon: {filename}")
         else:
             print(f"No icon found for {link['name']}")
