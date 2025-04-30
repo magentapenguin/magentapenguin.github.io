@@ -1,0 +1,69 @@
+{
+    "$schema": "./links.schema.json",
+    "data": [
+        {
+            "type": "link",
+            "name": "Infographic about sleep",
+            "url": "https://magentapenguin.github.io/potential-octo-happiness/"
+        },
+        {
+            "type": "link",
+            "name": "Misc Things",
+            "url": "https://magentapenguin.github.io/._./"
+        },
+        {
+            "type": "link",
+            "name": "QR Code App",
+            "url": "https://magentapenguin.github.io/qr-code-app/"
+        },
+        {
+            "type": "link",
+            "name": "Quiet",
+            "url": "https://magentapenguin.github.io/quiet/"
+        },
+        {
+            "type": "link",
+            "name": "Call app",
+            "url": "https://magentapenguin.github.io/call-app/"
+        },
+        {
+            "type": "link",
+            "name": "Call app V2",
+            "url": "https://magentapenguin.github.io/call-app-v2/"
+        },
+        {
+            "type": "link",
+            "name": "Snake Game",
+            "url": "https://magentapenguin.github.io/friendly-system/"
+        },
+        {
+            "type": "link",
+            "name": "Wings of Fire Timeline (for a book project)",
+            "url": "https://magentapenguin.github.io/wings-of-fire-timeline/"
+        },
+        {
+            "type": "link",
+            "name": "Secure Link Creator",
+            "url": "https://magentapenguin.github.io/secure-link/"
+        },
+        {
+            "type": "header",
+            "name": "🎈 Partykit Apps"
+        },
+        {
+            "type": "link",
+            "name": "Chat",
+            "url": "https://chat.magentapenguin.partykit.dev/"
+        },
+        {
+            "type": "link",
+            "name": "Multiplayer Clicker",
+            "url": "https://multiplayer-clicker.magentapenguin.partykit.dev/"
+        },
+        {
+            "type": "link",
+            "name": "Lorem Ipsum",
+            "url": "https://lorem-ipsum-game.magentapenguin.partykit.dev/"
+        }
+    ]
+}

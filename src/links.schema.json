@@ -1,0 +1,83 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Links Collection",
+    "description": "A collection of links and headers for magentapenguin.github.io",
+    "type": "object",
+    "required": [
+        "data"
+    ],
+    "properties": {
+        "$schema": {
+            "type": "string",
+            "description": "Reference to the schema file"
+        },
+        "data": {
+            "type": "array",
+            "description": "Array of link or header items",
+            "items": {
+                "type": "object",
+                "oneOf": [
+                    {
+                        "title": "Link Item",
+                        "required": [
+                            "type",
+                            "name",
+                            "url"
+                        ],
+                        "properties": {
+                            "type": {
+                                "type": "string",
+                                "enum": [
+                                    "link"
+                                ]
+                            },
+                            "name": {
+                                "type": "string",
+                                "description": "Display name of the link"
+                            },
+                            "url": {
+                                "type": "string",
+                                "format": "uri",
+                                "description": "URL for the link"
+                            },
+                            "icon": {
+                                "type": "string",
+                                "format": "uri",
+                                "description": "Optional icon for the link (favicon will be used if not provided)"
+                            },
+                            "description": {
+                                "type": "string",
+                                "description": "Optional description for the link"
+                            }
+                        }
+                    },
+                    {
+                        "title": "Header Item",
+                        "required": [
+                            "type",
+                            "name"
+                        ],
+                        "properties": {
+                            "type": {
+                                "type": "string",
+                                "enum": [
+                                    "header"
+                                ]
+                            },
+                            "name": {
+                                "type": "string",
+                                "description": "Header text to display"
+                            },
+                            "icon": {
+                                "type": "string",
+                                "format": "uri",
+                                "description": "Optional icon for the header"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "additionalProperties": false
+}
