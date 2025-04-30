@@ -65,8 +65,8 @@ for link in links['data']:
         if icon:
             icon = urllib.parse.urljoin(icon_url, icon)
             icon_name = os.path.basename(icon)
-            filename = os.path.join('public/favicons', f"{secrets.token_hex(8)}")
-            download_icon(icon, filename)
+            filename = os.path.join('favicons', f"{secrets.token_hex(8)}")
+            download_icon(icon,  os.path.join('public',filename))
             links['data'][links['data'].index(link)]['icon'] = '/'+filename
             print(f"Downloaded icon: {filename}")
         else:
