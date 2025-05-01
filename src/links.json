@@ -2,6 +2,10 @@
     "$schema": "./links.schema.json",
     "data": [
         {
+            "type": "header",
+            "name": "GitHub Projects"
+        },
+        {
             "type": "link",
             "name": "Infographic about sleep",
             "url": "https://magentapenguin.github.io/potential-octo-happiness/"
@@ -48,7 +52,7 @@
         },
         {
             "type": "header",
-            "name": "🎈 Partykit Apps"
+            "name": "Partykit Apps"
         },
         {
             "type": "link",
@@ -64,6 +68,15 @@
             "type": "link",
             "name": "Lorem Ipsum",
             "url": "https://lorem-ipsum-game.magentapenguin.partykit.dev/"
+        },
+        {
+            "type": "header",
+            "name": "Other Projects"
+        },
+        {
+            "type": "link",
+            "name": "My Website",
+            "url": "https://cat5python.com/"
         }
     ]
 }

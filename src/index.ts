@@ -18,25 +18,22 @@ async function makeLink(opts: LinkOptions) {
     console.log('Making link:', opts);
     const li = document.createElement('li');
     const icon = document.createElement('img');
-    try {
-        if (!opts.icon) {
-            throw new Error('No icon provided');
-        }
-        icon.src = opts.icon;
-    } catch (e) {
-        console.error('Error fetching icon:', e);
-        const newIcon = new BootstrapIcon();
-        newIcon.setAttribute('name', 'globe');
-        newIcon.setAttribute('size', '1em');
-        icon.replaceWith(newIcon);        
-    }
-    icon.crossOrigin = 'anonymous';
     icon.onerror = () => {
         const newIcon = new BootstrapIcon();
         newIcon.setAttribute('name', 'globe');
         newIcon.setAttribute('size', '1em');
         icon.replaceWith(newIcon);
     }
+    try {
+        icon.src = opts.icon ?? 'null';
+    } catch (e) {
+        console.error('Error fetching icon:', e);
+        const newIcon = new BootstrapIcon();
+        newIcon.setAttribute('name', 'globe');
+        newIcon.setAttribute('size', '1em');
+        icon.replaceWith(newIcon);
+    }
+    icon.crossOrigin = 'anonymous';
     icon.classList.add('favicon');
     li.appendChild(icon);
     const a = document.createElement('a');
@@ -49,6 +46,7 @@ async function makeLink(opts: LinkOptions) {
     iconElement.setAttribute('size', '1em');
     iconElement.classList.add('text-xl');
     a.appendChild(iconElement);
+    li.classList.add("flex", "flex-row", "gap-2", "items-center", "ps-2");
     li.appendChild(a);
     if (opts.description) {
         const desc = document.createElement('p');
@@ -70,8 +68,9 @@ async function makeHeader(opts: HeaderOptions) {
     }
     const span = document.createElement('span');
     span.innerText = opts.name;
-    span.classList.add('text-blue-500', 'hover:text-blue-400');
+    span.classList.add('text-2xl', 'font-bold');
     li.appendChild(span);
+    li.classList.add("flex", "flex-row", "gap-2", "items-bottom");
     return li;
 }
 (async () => {

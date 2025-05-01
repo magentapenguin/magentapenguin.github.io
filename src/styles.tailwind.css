@@ -25,4 +25,8 @@
     .title {
         letter-spacing: -0.05em;
     }
+    .noscript {
+        line-height: 1.1em;
+        margin: 0.5em 0;
+    }
 }
