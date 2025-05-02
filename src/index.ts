@@ -1,5 +1,59 @@
 import links from './links.json';
 import BootstrapIcon from './bsicons';
+import Tooltip from './tooltip';
+
+const libraries = {
+    bootstrap: {
+        name: 'Bootstrap',
+        url: 'https://getbootstrap.com/',
+        icon: 'bootstrap.png',
+    },
+    tailwind: {
+        name: 'Tailwind CSS',
+        url: 'https://tailwindcss.com/',
+        icon: 'tailwind.png',
+    },
+    vite: {
+        name: 'Vite',
+        url: 'https://vitejs.dev/',
+        icon: 'vite.png',
+    },
+    shoelace: {
+        name: 'Shoelace',
+        url: 'https://shoelace.style/',
+        icon: 'shoelace.png',
+    },
+    partykit: {
+        name: 'Partykit',
+        url: 'https://partykit.dev/',
+        icon: 'partykit.png',
+    },
+    kaplay: {
+        name: 'Kaplay',
+        url: 'https://kaplayjs.com/',
+        icon: 'kaplay.png',
+    },
+    jquery: {
+        name: 'jQuery',
+        url: 'https://jquery.com/',
+        icon: 'jquery.png',
+    },
+    typescript: {
+        name: 'TypeScript',
+        url: 'https://www.typescriptlang.org/',
+        icon: 'ts.png',
+    },
+    javascript: {
+        name: 'JavaScript',
+        url: 'https://www.javascript.com/',
+        icon: 'js.png',
+    },
+    python: {
+        name: 'Python',
+        url: 'https://www.python.org/',
+        icon: 'python.png',
+    }
+}
 
 interface LinkOptions {
     type?: 'link';
@@ -7,6 +61,7 @@ interface LinkOptions {
     url: string;
     icon?: string;
     description?: string;
+    libraries?: string[];
 }
 interface HeaderOptions {
     type?: 'header';
@@ -54,6 +109,24 @@ async function makeLink(opts: LinkOptions) {
         desc.classList.add('text-gray-500', 'text-sm');
         li.appendChild(desc);
     }
+    if (opts.libraries) {
+        for (const lib of opts.libraries.sort()) {
+            const libOpts = libraries[lib];
+            console.log('Library options:', libOpts);
+            if (libOpts) {
+                const libwrap = document.createElement('a');
+                const libicon = document.createElement('img');
+                libicon.src = '/icons/'+libOpts.icon;
+                libicon.alt = libOpts.name + ' icon';
+                libicon.classList.add('favicon');
+                libwrap.href = libOpts.url;
+                libwrap.target = '_blank';
+                libwrap.appendChild(libicon);
+                new Tooltip(libwrap, 'Made with ' + libOpts.name);
+                li.appendChild(libwrap);
+            }
+        }
+    }
     return li;
 }
 async function makeHeader(opts: HeaderOptions) {
@@ -61,7 +134,6 @@ async function makeHeader(opts: HeaderOptions) {
     if (opts.icon) {
         const icon = document.createElement('img');
         icon.src = opts.icon;
-        icon.crossOrigin = 'anonymous';
         icon.onerror = () => {
             icon.remove();
         }

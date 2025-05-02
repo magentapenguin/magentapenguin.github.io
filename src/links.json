@@ -8,47 +8,95 @@
         {
             "type": "link",
             "name": "Infographic about sleep",
-            "url": "https://magentapenguin.github.io/potential-octo-happiness/"
+            "url": "https://magentapenguin.github.io/potential-octo-happiness/",
+            "github": "https://github.com/magentapenguin/potential-octo-happiness",
+            "libraries": [
+                "tailwindcss",
+                "vite",
+                "typescript"
+            ]
         },
         {
             "type": "link",
             "name": "Misc Things",
-            "url": "https://magentapenguin.github.io/._./"
+            "url": "https://magentapenguin.github.io/._./",
+            "github": "https://github.com/magentapenguin/._./",
+            "libraries": [
+                "vite",
+                "typescript"
+            ]
         },
         {
             "type": "link",
             "name": "QR Code App",
-            "url": "https://magentapenguin.github.io/qr-code-app/"
+            "url": "https://magentapenguin.github.io/qr-code-app/",
+            "github": "https://github.com/magentapenguin/qr-code-app",
+            "libraries": [
+                "shoelace",
+                "vite",
+                "typescript"
+            ]
         },
         {
             "type": "link",
             "name": "Quiet",
-            "url": "https://magentapenguin.github.io/quiet/"
+            "url": "https://magentapenguin.github.io/quiet/",
+            "github": "https://github.com/magentapenguin/quiet",
+            "libraries": [
+                "javascript"
+            ]
         },
         {
             "type": "link",
             "name": "Call app",
-            "url": "https://magentapenguin.github.io/call-app/"
+            "url": "https://magentapenguin.github.io/call-app/",
+            "github": "https://github.com/magentapenguin/call-app",
+            "libraries": [
+                "vite",
+                "typescript"
+            ]
         },
         {
             "type": "link",
             "name": "Call app V2",
-            "url": "https://magentapenguin.github.io/call-app-v2/"
+            "url": "https://magentapenguin.github.io/call-app-v2/",
+            "github": "https://github.com/magentapenguin/call-app-v2",
+            "libraries": [
+                "vite",
+                "tailwindcss",
+                "typescript"
+            ]
         },
         {
             "type": "link",
             "name": "Snake Game",
-            "url": "https://magentapenguin.github.io/friendly-system/"
+            "url": "https://magentapenguin.github.io/friendly-system/",
+            "github": "https://github.com/magentapenguin/friendly-system",
+            "libraries": [
+                "vite",
+                "typescript"
+            ]
         },
         {
             "type": "link",
             "name": "Wings of Fire Timeline (for a book project)",
-            "url": "https://magentapenguin.github.io/wings-of-fire-timeline/"
+            "url": "https://magentapenguin.github.io/wings-of-fire-timeline/",
+            "github": "https://github.com/magentapenguin/wings-of-fire-timeline",
+            "libraries": [
+                "tailwindcss",
+                "vite",
+                "typescript"
+            ]
         },
         {
             "type": "link",
             "name": "Secure Link Creator",
-            "url": "https://magentapenguin.github.io/secure-link/"
+            "url": "https://magentapenguin.github.io/secure-link/",
+            "github": "https://github.com/magentapenguin/secure-link",
+            "libraries": [
+                "vite",
+                "typescript"
+            ]
         },
         {
             "type": "header",
@@ -57,17 +105,33 @@
         {
             "type": "link",
             "name": "Chat",
-            "url": "https://chat.magentapenguin.partykit.dev/"
+            "url": "https://chat.magentapenguin.partykit.dev/",
+            "github": "https://github.com/magentapenguin/chat-app",
+            "libraries": [
+                "partykit",
+                "typescript"
+            ]
         },
         {
             "type": "link",
             "name": "Multiplayer Clicker",
-            "url": "https://multiplayer-clicker.magentapenguin.partykit.dev/"
+            "url": "https://multiplayer-clicker.magentapenguin.partykit.dev/",
+            "github": "https://github.com/magentapenguin/multiplayer-clicker",
+            "libraries": [
+                "partykit",
+                "typescript"
+            ]
         },
         {
             "type": "link",
             "name": "Lorem Ipsum",
-            "url": "https://lorem-ipsum-game.magentapenguin.partykit.dev/"
+            "url": "https://lorem-ipsum-game.magentapenguin.partykit.dev/",
+            "github": "https://github.com/magentapenguin/lorem-ipsum",
+            "libraries": [
+                "partykit",
+                "kaplay",
+                "javascript"
+            ]
         },
         {
             "type": "header",
@@ -76,7 +140,13 @@
         {
             "type": "link",
             "name": "My Website",
-            "url": "https://cat5python.com/"
+            "url": "https://cat5python.com/",
+            "libraries": [
+                "bootstrap",
+                "jquery",
+                "javascript",
+                "python"
+            ]
         }
     ]
 }

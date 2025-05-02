@@ -48,7 +48,19 @@
                             "description": {
                                 "type": "string",
                                 "description": "Optional description for the link"
-                            }
+                            },
+                            "github": {
+                                "type": "string",
+                                "format": "uri",
+                                "description": "Optional GitHub URL for the link"
+                            },
+                            "libraries": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                },
+                                "description": "Optional list of libraries used in the link"
+                            }                  
                         }
                     },
                     {

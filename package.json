@@ -5,6 +5,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@floating-ui/dom": "^1.6.13",
     "@tailwindcss/vite": "^4.0.8",
     "vite": "^6.2.6"
   },
