@@ -48,6 +48,15 @@
         },
         {
             "type": "link",
+            "name": "Scroll Game",
+            "url": "https://magentapenguin.github.io/scroll-game/",
+            "github": "https://github.com/magentapenguin/scroll-game",
+            "libraries": [
+                "javascript"
+            ]
+        },
+        {
+            "type": "link",
             "name": "Call app",
             "url": "https://magentapenguin.github.io/call-app/",
             "github": "https://github.com/magentapenguin/call-app",

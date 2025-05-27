@@ -8,7 +8,7 @@ const libraries = {
         url: 'https://getbootstrap.com/',
         icon: 'bootstrap.png',
     },
-    tailwind: {
+    tailwindcss: {
         name: 'Tailwind CSS',
         url: 'https://tailwindcss.com/',
         icon: 'tailwind.png',
