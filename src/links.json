@@ -108,6 +108,17 @@
             ]
         },
         {
+            "type": "link",
+            "name": "Chat V2",
+            "url": "https://magentapenguin.github.io/chat2/",
+            "github": "https://github.com/magentapenguin/chat2",
+            "libraries": [
+                "vite",
+                "tailwindcss",
+                "typescript"
+            ]
+        },
+        {
             "type": "header",
             "name": "Partykit Apps"
         },
