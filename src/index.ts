@@ -2,7 +2,11 @@ import links from './links.json';
 import BootstrapIcon from './bsicons';
 import Tooltip from './tooltip';
 
-const libraries = {
+const libraries: Record<string, {
+    name: string;
+    url: string;
+    icon: string;
+}> = {
     bootstrap: {
         name: 'Bootstrap',
         url: 'https://getbootstrap.com/',

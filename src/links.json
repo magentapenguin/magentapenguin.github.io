@@ -119,6 +119,17 @@
             ]
         },
         {
+            "type": "link",
+            "name": "Endless Road",
+            "url": "https://magentapenguin.github.io/endless-road/",
+            "github": "https://github.com/magentapenguin/endless-road",
+            "libraries": [
+                "typescript",
+                "vite",
+                "kaplay"
+            ]
+        },
+        {
             "type": "header",
             "name": "Partykit Apps"
         },
@@ -166,6 +177,16 @@
                 "jquery",
                 "javascript",
                 "python"
+            ]
+        },
+        {
+            "type": "link",
+            "name": "More Website",
+            "url": "https://www.magentapenguin.dev/",
+            "libraries": [
+                "typescript",
+                "tailwindcss",
+                "svelte"
             ]
         }
     ]
