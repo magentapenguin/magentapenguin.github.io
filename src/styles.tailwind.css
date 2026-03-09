@@ -7,8 +7,8 @@
 
 @layer components {
     bs-icon {
-        width: 1em;
         height: 1em;
+        width:  1em;
         display: inline-block;
         vertical-align: -0.25em;
     }
@@ -17,7 +17,8 @@
         height: 100%;
     }
     .favicon {
-        width: 1em;
+        height: 1em;
+        width:  1em;
         display: inline-block;
         vertical-align: -0.25em;
     }

@@ -130,6 +130,15 @@
             ]
         },
         {
+            "type": "link",
+            "name": "Potato Game (2.5d Maze Runner)",
+            "url": "https://magentapenguin.github.io/potato/",
+            "github": "https://github.com/magentapenguin/potato",
+            "libraries": [
+                "javascript"
+            ]
+        },
+        {
             "type": "header",
             "name": "Partykit Apps"
         },
